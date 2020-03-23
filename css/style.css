@@ -388,6 +388,9 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px; }
