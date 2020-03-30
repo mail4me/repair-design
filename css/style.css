@@ -451,7 +451,9 @@ body {
     background-color: #131313;
     text-transform: uppercase;
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: 'Yeseva One';
+    font-size: 12px; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -459,7 +461,7 @@ body {
       height: 30px;
       border: 2px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 16px; }
 
 .instagram {
   background-color: #131313;
