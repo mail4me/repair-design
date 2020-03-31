@@ -12,26 +12,21 @@
       display: none
     &__content
       margin-left: 0 
-@media screen and ( max-width: 760px  ) 
-  .row
-    flex-direction: column
-    align-items: center
-.types
-  &__card  
-    margin-bottom: 5rem
-.card
-  &__text
-    margin-left: 0                      
 @media screen and ( max-width: 570px  )  
   .contacts
     &__phone
       margin-right: 0 
       color: $light
-      text-decoration: none      
+      text-decoration: none   
+      font-weight: 500
+      font-size: 12px
+      line-height: 1rem   
     &__button
       display: none  
   .title
-   font-size: 1.64rem 
+   font-size: 1.84rem 
+   line-height: 152.83%
+   
   .hero
     &__scroll-down
         display: none  
@@ -39,15 +34,17 @@
       max-width: 22.86rem  
     &__text
       font-size: 1.29rem   
+      line-height: 135.84%
       margin-bottom: 2.28rem
     &__button
       display: block
       min-width: 22.86rem
-      margin-bottom: 1.85rem  
+      margin-bottom: 1.85rem 
+      &--primary
+        padding: 19px 70px
+      &--outline 
+        padding: 19px 70px  
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
         display: none
-               
-
-    

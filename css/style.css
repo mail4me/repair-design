@@ -500,7 +500,7 @@ img {
 .button--outline {
   padding: 19px 45px 16px 45px; }
 
-.types {
+.types__section-title {
   margin-bottom: 2.214rem; }
 
 .row {
@@ -545,17 +545,6 @@ img {
   background-color: #E3B873;
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
-
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; } }
-
-.types__card {
-  margin-bottom: 5rem; }
-
-.card__text {
-  margin-left: 0; }
 
 @media screen and (max-width: 1200px) {
   html {
