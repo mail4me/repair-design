@@ -546,6 +546,22 @@ img {
   color: #ffffff;
   padding: 1.214rem 2.6rem; }
 
+.section-title__subtitle {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 52.928rem;
+  margin-bottom: 2.785rem;
+  margin-top: 1.642rem; }
+
+.design__subtitle {
+  color: #131313;
+  font-family: 'FuturaBookC';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.428rem;
+  line-height: 1.928rem;
+  margin: auto 0; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -563,34 +579,41 @@ img {
 @media screen and (max-width: 760px) {
   .row {
     flex-direction: column;
-    align-items: center; } }
-
-.types__card {
-  margin-bottom: 5rem; }
-
-.card__text {
-  margin-left: 0; }
+    align-items: center; }
+  .types__card {
+    margin-bottom: 4.857rem; }
+  .card__text {
+    margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1rem; }
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 1.84rem;
+    line-height: 152.83%; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
     max-width: 22.86rem; }
   .hero__text {
     font-size: 1.29rem;
+    line-height: 135.84%;
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+    .hero__button--primary {
+      padding: 19px 70px; }
+    .hero__button--outline {
+      padding: 19px 70px; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
