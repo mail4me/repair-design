@@ -4,6 +4,7 @@
   .nav
     &__item
       margin-right: 1rem   
+     
 @media screen and ( max-width: 992px  )   
   .nav
     display: none  
@@ -18,43 +19,83 @@
    align-items: center       
  .types
    &__card
-    margin-bottom: 4.857rem
+    margin-bottom: 5rem
  .card
    &__text
-    margin-left: 0     
-@media screen and ( max-width: 570px  )  
+    margin-left: 0 
+    max-width: 22.6rem
+    margin-top: -12rem  
+    padding-top: 1.68rem
+    padding-left: 2.6rem
+
+   &__title
+    margin-bottom: 0.6rem      
+@media screen and ( max-width: 570px  ) 
+  .types
+    &__section-title
+      margin-bottom: 2.9rem
+  .section-title_heading
+    font-style: normal
+    font-weight: normal
+    font-size: 1.8rem
+    line-height: 138.6% 
+  .row 
+    width: 340px
+  .section-title__subtitle
+    width: 340px 
+  .design__section-title
+    width: 340px 
+  .types__section-title
+    width: 340px  
+  .container
+    max-width: 90%
+    margin-left: 12px
   .contacts
     &__phone
       margin-right: 0 
       color: $light
       text-decoration: none   
       font-weight: 500
-      font-size: 12px
+      font-size: 1rem
       line-height: 1rem   
     &__button
       display: none  
   .title
-   font-size: 1.84rem 
-   line-height: 152.83%
-   
+   font-size: 1.9rem 
+   line-height: 138.83%
+   font-weight: 400
+  .hero__content
+    max-width: 28.21rem  
   .hero
     &__scroll-down
-        display: none  
-    &__content
-      max-width: 22.86rem  
+      display: none  
     &__text
-      font-size: 1.29rem   
+      font-size: 1.5rem   
       line-height: 135.84%
-      margin-bottom: 2.28rem
+      margin-bottom: 2.8rem
+      width: 100%
     &__button
       display: block
-      min-width: 22.86rem
-      margin-bottom: 1.85rem 
-      &--primary
-        padding: 19px 70px
-      &--outline 
-        padding: 19px 70px               
+      min-width: 28rem
+      margin-bottom: 1.85rem
+      font-size: 13px
+      line-height: 15px 
+  .button      
+    &--primary
+      padding: 19px 70px
+    &--outline 
+      padding: 19px 70px  
+  .menu__logo
+    font-size: 1.05rem
+    line-height: 1rem 
+  .section-title__subtitle
+    width: 24.94rem   
+  .design
+    &__subtitle  
+      font-size: 1.22rem
+      line-height: 135.84%
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
         display: none
+               
