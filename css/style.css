@@ -391,8 +391,12 @@ template {
 .col-30 {
   flex-basis: 30%; }
 
-.col-50 {
-  width: 50%; }
+.col-65 {
+  width: 65%; }
+
+.col-35 {
+  width: 35%;
+  margin-right: 8.8rem; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -419,7 +423,9 @@ img {
     .section-title__heading {
       text-transform: uppercase;
       font-family: 'Yeseva One', cursive;
-      line-height: 138.6%; }
+      line-height: 141.5%;
+      font-size: 1.748rem;
+      font-weight: normal; }
       .section-title__heading--primary {
         color: #E3B873; }
     .section-title__word {
@@ -432,12 +438,12 @@ img {
         background-color: #E3B873;
         margin-left: 2rem; }
     .section-title__text {
-      font-family: 'FuturaBookC';
       font-style: normal;
       font-weight: normal;
-      font-size: 1.28rem;
+      font-size: 1.29rem;
       line-height: 2.07rem;
-      max-width: 31.57rem; }
+      max-width: 31.57rem;
+      margin-top: 1.8rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -725,25 +731,35 @@ img {
     align-self: flex-end;
     padding: 1.2rem 3.55rem; }
 
+.swiper-wrapper {
+  margin-bottom: 6.13rem; }
+  .swiper-wrapper__slide {
+    max-width: 48.5rem;
+    margin-top: 1.2rem; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
   .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 5.857rem; }
+    flex-basis: 44%;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem; }
   .swiper-slide__heading {
     font-family: 'Yeseva One', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.285rem;
+    font-size: 1.32rem;
     line-height: 1.78rem;
     color: #E3B873;
     text-transform: uppercase;
     margin-bottom: 0.64rem; }
+  .swiper-slide__value {
+    font-size: 1.32rem; }
 
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 0.68rem;
+  height: 0.68rem; }
   .swiper-pagination-bullet-active {
     background-color: #ffffff; }
 
@@ -766,6 +782,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -1px; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-right: 9px; }
 
 @media screen and (max-width: 1200px) {
   html {
