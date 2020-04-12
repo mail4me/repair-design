@@ -6,6 +6,9 @@
       margin-right: 1rem   
      
 @media screen and ( max-width: 992px  )   
+  .hero
+    &::after
+      display: none
   .nav
     display: none  
   .hero
@@ -30,7 +33,32 @@
 
    &__title
     margin-bottom: 0.6rem      
-@media screen and ( max-width: 570px  ) 
+@media screen and ( max-width: 570px  )
+  .swiper-slide
+    &__text 
+      flex-basis: 50%
+    &__heading
+      font-size: 1.2rem
+    &__value
+      font-size: 1.2rem    
+  .col  
+    &-65
+      width: 100%  
+    &-35
+      width: 100%  
+      padding-left: 50px
+  .section-title
+    &__word
+      &::after
+        display: none  
+    &__text
+      font-size: 1.2rem
+      line-height: 158.48%
+    &__heading
+      &--primary
+        font-size: 1.68rem
+        line-height: 158.6%
+        margin-bottom: 0.3rem
   .types
     &__section-title
       margin-bottom: 2.9rem
@@ -93,7 +121,58 @@
   .design
     &__subtitle  
       font-size: 1.22rem
-      line-height: 135.84%
+      line-height: 135.84% 
+  .projects
+    padding-bottom: 78rem    
+  .control
+    &__policy
+      &-label
+        justify-content: left 
+    &__form
+      justify-content: left  
+    &__section-title
+      margin-top: -78rem  
+    &__video
+      max-width: 340px
+      min-height: 207px
+      background-size: 340px 207px
+    &__text
+      color: $light
+      font-size: 1.2rem
+      line-height: 169.8%
+      font-style: normal
+      font-weight: normal
+      width: 348px  
+      margin-bottom: 35px  
+    &__input
+      width: 340px
+      border-bottom: 1px solid $light
+      margin-bottom: 35px
+      font-size: 18px
+      &-phone
+        margin-bottom: 0
+        color: $light
+      &-group
+        flex-basis: 70% 
+    &__label
+      color: rgba(255, 255, 255, 0.5)  
+      &-phone
+        margin-top: 32px
+    &__button
+      margin-top: 20px    
+      order: 5
+      margin: auto 
+      margin-top: 60px
+      padding: 20px 130px 
+      font-size: 15px
+    &__policy
+      &-label
+        color: $light  
+        font-size: 16px
+  .form
+    &__input
+    margin-bottom: 0    
+
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down
