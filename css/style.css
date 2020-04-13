@@ -801,6 +801,28 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin: auto;
+    margin-bottom: 6.67rem;
+    min-height: 33.214rem;
+    max-width: 66rem; }
+  .footer__section-title {
+    max-width: 34.271rem;
+    color: #E3B873;
+    margin: auto; }
+  .footer-title__heading {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    line-height: 141.5%;
+    font-size: 1.42rem;
+    font-weight: normal; }
+  .footer__image {
+    margin-bottom: 3rem; }
+    .footer__image-mail {
+      display: inline-block;
+      margin-right: 1rem; }
+    .footer__image-inst {
+      display: inline-block; }
 
 .modal {
   opacity: 0;
