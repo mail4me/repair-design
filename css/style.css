@@ -348,6 +348,8 @@ template {
   font-size: 1.285rem;
   color: #ffffff;
   padding: 0.5rem 0; }
+  .input--color {
+    color: #181818; }
   .input--light::-webkit-input-placeholder {
     color: #ffffff; }
   .input--light::-moz-placeholder {
@@ -381,10 +383,14 @@ template {
     justify-content: center; }
 
 label.invalid {
+  margin-top: 50px;
+  position: absolute;
   color: tomato; }
 
-input.invalid {
-  border: 1px solid tomato; }
+input {
+  outline: none; }
+  input.invalid {
+    border-bottom: 1px solid tomato; }
 
 .container {
   width: 100%;
@@ -849,6 +855,7 @@ img {
     color: #ffffff;
     max-width: 36.14rem; }
   .modal__close {
+    outline: none;
     position: absolute;
     right: 0;
     top: 0;

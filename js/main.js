@@ -20,7 +20,7 @@ $(document).ready(function(){
          nextEl: '.swiper-button-next',
          prevEl: '.swiper-button-prev',
       }
-   })
+    })
 
    var next = $('.swiper-button-next');
    var prev = $('.swiper-button-prev');
@@ -32,39 +32,170 @@ $(document).ready(function(){
    new WOW().init();
 
    //Валидация формы
-   $('.modal__form').validate({
-     errorClass: "invalid",
-     rules: {
-        // строчное правило
-        // simple rule, converted to {required:true}
-        userName: {
-           required: true,
-           minlength: 2
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
 
-        },
-        userPhone: "required",
+      userPhone: { 
+        required: true,
+        minlength: 17
+      },
+
         // compound rule
         // Правило объект
-        userEmail: {
-          required: true,
-          email: true
+      userEmail: {
+        required: true,
+        email: true
+      },
+
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя короче двух букв",
+        maxlength: "Имя слишком длинное"
+      },
+
+      userPhone: {
+        required: "Телефон обязательно",
+        minlength: "Введите номер полностью"
+      },
+
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      },
+        // userCheck: "Поставьте галочку, если согласны"
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(modal).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут.');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
         }
-      },// сообщения
-      messages: {
-         userName: {
-            required: "Имя обязательно",
-            minlength: "Имя короче двух букв"
-         },
-         userPhone:  "Телефон обязательно",
-         userEmail: {
-           required: "Обязательно укажите email",
-           email: "Введите в формате: name@domain.com"
-         }
-       }
-   });
+      });
+    }
+  });
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+       // строчное правило
+       // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+
+      userPhone: { 
+        required: true,
+        minlength: 17
+      },
+
+       // compound rule
+       // Правило объект
+      userEmail: {
+        required: true,
+        email: true
+      },
+       //userCheck: {
+       //required: true
+       //}
+     },// сообщения
+
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя короче двух букв",
+        maxlength: "Имя слишком длинное"
+      },
+      userPhone: {
+        required: "Телефон обязательно",
+        // minlength: "Телефон короче двух символов",
+        minlength: "Введите номер полностью"
+      },
+
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      },
+       // userCheck: "Поставьте галочку, если согласны"
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+       // строчное правило
+       // simple rule, converted to {required:true}
+      userName: {
+        equired: true,
+        minlength: 2,
+        maxlength: 15
+      },
+
+      userPhone: { 
+        required: true,
+        minlength: 17
+      },
+
+       // compound rule
+       // Правило объект
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userCheck: {
+        required: true
+      }
+     },// сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя короче двух букв",
+        maxlength: "Имя слишком длинное"
+      },
+      userPhone: {
+        required: "Телефон обязательно",
+        // minlength: "Телефон короче двух символов",
+        minlength: "Введите номер полностью"
+      },
+
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: name@domain.com"
+      },
+      userCheck: "Поставьте галочку, если согласны"
+    },
+
+  });
+  $(".modal__form").validate({
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        dataType: "dataType",
+        success: function (response) {
+          console.log('Ajax сработал, ответ сервера:' +response );
+        }
+      });
+    }
+  });
    //Маска телефон
 
-   $('[type=tel]').mask('+7 (000) 000 00 00', {placeholder: "+7(___)___-__-__"});
+   $('[type=tel]').mask('+7 (000) 000 00 00', {placeholder: "Ваш номер телефона:"});
 
    //карта
    ymaps.ready(function () {
